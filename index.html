@@ -149,8 +149,8 @@ function updateGameArea() {
         minGap = 60;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "green", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+        myObstacles.push(new component(10, height, "BurlyWood", x, 0));
+        myObstacles.push(new component(10, x - height - gap, "BurlyWood", x, height + gap));
     }
     else if (((Math.floor(myGameArea.frameNo/50) >= 90)&&(Math.floor(myGameArea.frameNo/50) < 150))&&(myGameArea.frameNo == 1 || everyinterval(150))) {
         image_changer2();
